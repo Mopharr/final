@@ -1,0 +1,150 @@
+/* ==================  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #285943;
+  --front: #66a771;
+  --text: #ef233c;
+  --outline: #8cd790;
+  --hover: #e8e1ef;
+}
+
+/* ======= Navbar ================ */
+.navbar {
+  background-color: var(--background);
+  color: #fff;
+  padding: 10px;
+}
+.navbar label {
+  margin-left: 20px;
+  font-size: 25px;
+}
+.navbar a {
+  color: #e8e1ef;
+  margin-right: 20px;
+  border: 2px solid #e8e1ef;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* =================== Header ==================== */
+
+.main {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url(./images/environmental-safety1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+}
+.main-cap {
+  width: 30%;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: #fff;
+}
+.main-cap p {
+  margin-bottom: 2rem;
+}
+.main-cap a {
+  background-color: var(--background);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: #fff;
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+.main-cap a:hover {
+  background-color: var(--front);
+  color: #fff;
+}
+@media all and (max-width: 1024px) {
+  .main-cap {
+    width: 40%;
+  }
+}
+@media all and (max-width: 885px) {
+  .main-cap {
+    width: 50%;
+  }
+  .main-cap h1{
+    font-size: 30px;
+  }
+  .main-cap p{
+    font-size: 14px;
+  }
+  .main-cap a{
+    padding: 10px;
+  }
+}
+
+@media all and (max-width: 530px) {
+  .main-cap {
+    width: 50%;
+  }
+  .main-cap h1{
+    font-size: 25px;
+  }
+  .main-cap p{
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 425px) {
+  .main-cap{
+    top: 25%;
+  }
+}
+@media all and (max-width: 320px) {
+  .main-cap {
+    width: 70%;
+  }
+  .main-cap h1{
+    font-size: 20px;
+  }
+}
+
+
+/* =================section 2 =============== */
+
+.info {
+  background-color: #f5f5f5;
+  height: 40vh;
+  text-align: center;
+  padding-top: 7%;
+}
+.info input {
+  outline: none;
+  text-align: center;
+  border: 2px solid #285943;
+  border-radius: 3px;
+  margin: 10px auto 2rem;
+}
+.info a {
+  background-color: #285943;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.info a:hover {
+  background-color: #66a771;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
