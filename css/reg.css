@@ -110,8 +110,7 @@ a:hover{
       }
       .top h4{
           display: flex;
-         
-      }
+    }
       .top-right {
          width: 100%;
           margin: 0 20px;
@@ -126,4 +125,9 @@ a:hover{
         width: 100%;
     }
 
+  }
+  @media all and (max-width: 375px){
+    .top h4{
+        display: grid;
+  }
   }
