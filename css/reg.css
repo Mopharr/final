@@ -19,7 +19,6 @@ img{
     margin: 60px auto auto;
 }
 
-
 .top-left{
     width: 50%;
     margin: 20px;
@@ -105,15 +104,26 @@ a:hover{
   @media all and (max-width: 542px) {
       .top{
           display: grid;
-    
       }
-      .top-right{
+      .top-left{
+          width: 100%;
+      }
+      .top h4{
+          display: flex;
+         
+      }
+      .top-right {
+         width: 100%;
           margin: 0 20px;
           padding: 0px 30px;
       }
       .down-left{
+          width: 100%;
         margin: 0 20px;
           padding: 0px 30px;
+    }
+    .down-right{
+        width: 100%;
     }
 
   }
