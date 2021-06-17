@@ -1,3 +1,5 @@
+// NAVBAR FOR THE ADMIN PANEL 
+
 const menu = document.querySelector('#hamburger')
 
 const menuLinks = document.querySelector('.dashboard')
@@ -9,3 +11,9 @@ const mobileMenu = () => {
 }
 
 menu.addEventListener('click', mobileMenu)
+
+// END OF THE NAVBAR 
+
+// VALIDATION FOR THE LOGIN PAGE 
+
+
