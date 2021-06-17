@@ -17,19 +17,21 @@
                 <h2>Admin Login</h2>
 
                 <div class="input-main">
-                    <input type="text" >
+                    <input autocomplete="off" type="text" id="username">
                     <span class="placeholder">Username</span>
                 </div>
                 <div class="input-main">
-                    <input type="password" >
+                    <input autocomplete="off" type="password" id="password">
                     <span class="placeholder">Password</span>
                 </div>
-                <div class="submit">
-                    <input type="submit" value="Login">
+                <div class="submit" > 
+                    <input onclick="login()" type="submit" value="Login">
                 </div>
 
             </form>
         </div>
     </div>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

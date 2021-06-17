@@ -16,4 +16,17 @@ menu.addEventListener('click', mobileMenu)
 
 // VALIDATION FOR THE LOGIN PAGE 
 
+function login() {
+    
+    var user = document.getElementById('username').value;
+    var pass = document.getElementById('password').value;
 
+    if (user =="admin" && pass == "admin123" ) {
+        
+        location.assign("./admin.html");
+    }
+    else
+    {
+        window.alert("login failed")
+    }
+}
