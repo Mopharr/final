@@ -144,7 +144,25 @@
   background-color: #66a771;
 }
 
-footer {
-  background-color: #000;
+.footer-area {
+  background-color: #222;
   color: #fff;
+  padding: 50px 0 0;
+}
+.footer-area a{
+  color: #fff;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.footer-social a {
+  background: #111;
+  transition: all 300ms linear 0s;
+  width: 32px;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 0;
 }
