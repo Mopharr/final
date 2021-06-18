@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./images/environmental-safety1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.box-top {
+  position: absolute;
+  top: 13%;
+  left: 28%;
+  transform: translate(-28%, -12%);
+}
+.box-top i {
+  font-size: 30px;
+  border-right: 1.5px solid #aaa;
+  margin-right: 10px;
+  padding-right: 15px;
+}
+.box-top span {
+  font-size: 30px;
+}
+.box {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 60%;
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+}
+
+.child {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+.box-main{
+    display: flex;
+    width: 100%;
+}
+.box-main h3{
+    margin: 10px;
+}
+.box-main span{
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+    margin: 7px;
+    border-radius: 7px;
+}
+.parent{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
