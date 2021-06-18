@@ -23,7 +23,7 @@ function login() {
 
     if (user =="admin" && pass == "admin123" ) {
         
-        location.assign("./admin.html");
+        location.assign("admin.html");
     }
     else
     {
