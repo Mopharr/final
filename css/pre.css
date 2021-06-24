@@ -5,8 +5,7 @@
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(./images/environmental-safety1.jpg);
+
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -28,13 +27,12 @@ body {
   font-size: 30px;
 }
 .box {
-  margin: auto;
+  margin:50px auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
-  height: 60%;
+  width: 70%;
   background-color: #f5f5f5;
   padding: 10px 20px;
   border-radius: 8px;
@@ -48,6 +46,7 @@ body {
 }
 .box-main{
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
 .box-main h3{
@@ -62,5 +61,19 @@ body {
 .parent{
     width: 100%;
     height: 100%;
-    padding: 30px;
+    padding: 20px;
 }
+@media (max-width: 1025px) {
+    .box{
+        width: 90%;
+    }
+    
+}
+@media (max-width: 600px) {
+    .box{
+        display: flex;
+        flex-direction:column ;
+        height: auto;
+    }
+}
+

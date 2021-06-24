@@ -13,25 +13,25 @@
             <img src="./css/images/environmental-safety1.jpg" alt="">
         </div>
         <div class="form">
-            <form action="./admin.html" method="post">
+            <!-- <form onsubmit="event.preventDefault()"> -->
                 <h2>Admin Login</h2>
-
+                <span id="error"></span>
                 <div class="input-main">
                     <input autocomplete="off" type="text" id="username">
                     <span class="placeholder">Username</span>
                 </div>
                 <div class="input-main">
-                    <input autocomplete="off" type="password" id="password">
+                    <input autocomplete="off" type="password" id="password" aria-autocomplete="false">
                     <span class="placeholder">Password</span>
                 </div>
                 <div class="submit" > 
-                    <input onclick="login()" type="submit" value="Login">
+                    <input onclick="login()" type="submit">
                 </div>
 
-            </form>
+            <!-- </form> -->
         </div>
     </div>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>
