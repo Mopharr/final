@@ -23,6 +23,7 @@
     justify-content: space-between;
     position: absolute;
     z-index: 10;
+    width: 100vw;
   }
   .navbar label {
     margin-left: 20px;
@@ -181,7 +182,7 @@
       transition: all 0.5s ease;
       transform: translateY(-5px) rotate(-45deg);
     }
-
+    
     .buttom{
       position: absolute;
       top: 50%;
@@ -189,6 +190,17 @@
       transform: translate(-20%, -50%);
     }
   }
-      
+
+  @media (max-width:560px) {
+    body{
+      overflow-x: hidden;
+    }
+    .top{
+      width: 80%;
+    }
+    .buttom{
+      width: 100vw;
+    }
+  }
 
 
