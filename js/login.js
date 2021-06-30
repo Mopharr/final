@@ -1,7 +1,7 @@
 
 
 
-// END OF THE NAVBAR 
+
 
 // VALIDATION FOR THE LOGIN PAGE 
 
@@ -9,6 +9,8 @@ function login() {
     var user = document.getElementById('username').value;
     var pass = document.getElementById('password').value;
     var error = document.getElementById('error');
+    var upload_btn = document.getElementById('submit')
+    upload_btn.value = 'processing...'
 
     const url = 'https://unique-id-final-year-project.herokuapp.com/login'
     const data = {
