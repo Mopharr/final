@@ -82,7 +82,21 @@ input:focus + .placeholder{
     font-size: 20px;
     color: #222;
 }
-.submit{
+
+button img{
+    width: 50px;
+    background: transparent;
+}
+.processing {
+    width: 100%;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #285943;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+#submit {
     cursor: pointer;
     background-color: #285943;
     padding: 10px 30px;
@@ -94,12 +108,15 @@ input:focus + .placeholder{
 }
 input[type="submit"]{
     color: #f5f5f5;
+    cursor: pointer;
 }
 
 #error{
     color: red;
     text-align: center;
     margin: 20px auto;
+    width: 100%;
+    display: inline-block;
 }
 @media (max-width: 1024px) {
     .pic{

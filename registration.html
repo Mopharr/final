@@ -11,34 +11,100 @@
     <nav>
         <label for="logo" class="coa"><img src="./css/images/download (1).jpeg" alt="" srcset=""></label>
     </nav>
-    <div class="form-main">
-        <form action="post" method="post" >
-            <section class="down">
-                <div class="down-left">
+      <form class="" action="index.html" method="post">
+            <section class="main">
+                <div class="">
                     <h3>Particulars Of The Child </h3>
-                        <h4>Name Of Child(Surname First) <input id="name" type="text" name="array[]" value=""></h4><br>
-                        <h4>Date Of Birth: <input id="dob" type="date" name="array[]" value=""></h4>  <br>
-                        <h4>Sex: <input id="sex" type="radio"  id="male" name="gender" value="male" >Male  <input id="sex" type="radio"  id="female" name="gender" value="female"> Female</h4><br>
-                        <h4>Place Of Occurrence: <input id="pob" type="radio"  id="maternity" value="maternity" name="place" >Maternity<input id="pob" type="radio" id="hospital" value="hospital" name="place">Hospital</h4><br>
-                        <h4>Village/Town(in Registration Area) <input id="vil" type="text"></h4><br>
-                    <h3>Particulars Of The Mother</h3>
-                        <h4>Name In Full(Surname First) <input id="mother" type="text" name="array[]" value=""></h4><br>
-                        <h4>Address Of Usual Place Of Residence <input id="add" type="text" name="array[]" value=""></h4><br>
-                        <h4>Marital Status Single/Married/Seperated/Divorced/Widowed: <input id="marital" type="text" name="array[]" value=""></h4><br>
-                        <h4>Ocuupation: <input  type="text">
+                    <div class="input-box">
+                        <label for="">Name Of Child(Surname First)</label><br>
+                        <input required id="childname" type="text" name="array[]" value="" /> 
+                    </div>
+                    <div class="input-box">
+                        <label for="">Date Of Birth</label><br>
+                        <input required id="dob" type="date" name="array[]" value="" /> 
+                    </div>
+                    <div class="input-box">
+                        <label for="">Sex:</label><br>
+                        <input id="sex" type="text" name="array[]">
+                    </div>
+                    <div class="input-box">
+                        <label for="">Place Of Occurrence</label><br>
+                        <input id="poc" type="text" name="array[]" value="" /> 
+                    </div>
+                    <div class="input-box">
+                        <label for="">Village / Town</label>
+                        <br>
+                        <input id="village" type="text" name="array[]" value="" /> 
+                    </div>
+                    <div class="input-box">
+                        <label for="">Local Government Area</label><br>
+                        <input id="local" type="text" name="array[]" value="" /> 
+                    </div>
+                    <div class="input-box">
+                        <label for="">State of Birth</label><br>
+                        <input id="sob" type="text" name="array[]" value="" /> 
+                    </div>
                 </div>
-                <div class="down-right">
+
+                <div class="">
+                    <h3>Particulars Of The Mother</h3>
+                    <div class="input-box">
+                        <label for="">Mother's Name</label><br>
+                        <input id="motherName" type="text" name="array[]" value="" /> 
+                    </div>
+                    <div class="input-box">
+                        <label for="">Address</label><br>
+                        <input id="address" type="text" name="array[]" value="" /> 
+                    </div>
+                    <div class="input-box">
+                        <label for="">Marital Status</label><br>
+                        <input id="status" type="text" name="array[]" value="" /> 
+                    </div>
+                    <div class="input-box">
+                        <label for="">Nationality</label><br>
+                        <input id="nationality" type="text" name="array[]" value="" /> 
+                    </div>
+                    <div class="input-box">
+                        <label for="">State</label><br>
+                        <input id="motherstate" type="text" name="array[]" value="" /> 
+                    </div>
+                    <div class="input-box">
+                        <label for="">Occupation</label><br>
+                        <input id="occupation" type="text" name="array[]" value="" /> 
+                    </div>
+                </div>
+
+                <div class="">
                     <h3>Particulars Of The Father</h3>
-                        <h4>Name In Full(Surname First) <input type="text" id ="mname" name="array[]" value=""></h4><br>
-                        <h4>Address Of Usual Place Of Residence <input type="text" id="fa" name="array[]" value=""></h4><br>
-                        <h4>Natiionality Nigeria/Non Nigeria: <input type="text" name="" id="" name="array[]" value=""></h4><br>
-                        <h4>Occupation: <input type="text"></h4>
+                    <div class="input-box">
+                        <label for="">Father's Name</label><br>
+                        <input id="fatherName" type="text" name="array[]" value="" /> 
+                    </div>
+                    <div class="input-box">
+                        <label for="">Address</label><br>
+                        <input id="fatherAddress" type="text" name="array[]" value="" /> 
+                    </div>
+                    <div class="input-box">
+                        <label for="">Nationality</label><br>
+                        <input id="fnationality" type="text" name="array[]" value="" /> 
+                    </div>
+                    <div class="input-box">
+                        <label for="">State</label><br>
+                        <input id="fstate" type="text" name="array[]" value="" /> 
+                    </div>
+                    <div class="input-box">
+                        <label for="">Occupation</label><br>
+                        <input id="foccupation" type="text" name="array[]" value="" /> 
+                    </div>
                 </div>
             </section>
-            <a href="#" onclick="login()"> Submit </a>
+            <button type="button" name="button" onclick="Login()">
+                Submit
+            </button>
         </form>
-    </div>
-        
+         
+      
+        <p id="par"></p>
     </div>
     <script src="./js/reg.js"></script>
 </body>

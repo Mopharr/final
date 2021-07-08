@@ -4,13 +4,24 @@
 
 
 // VALIDATION FOR THE LOGIN PAGE 
+const process = document.querySelector('#process')
+const submit = document.querySelector('#submit')
+function processing() {
+    process.style.display = 'block'
+    submit.style.display = 'none'
+}
+function notProcessing() {
+    process.style.display = 'none'
+    submit.style.display = 'block'
+}
 
 function login() {
     var user = document.getElementById('username').value;
     var pass = document.getElementById('password').value;
     var error = document.getElementById('error');
-    var upload_btn = document.getElementById('submit')
-    upload_btn.value = 'processing...'
+    // var upload_btn = document.getElementById('submit')
+    processing()
+    
 
     const url = 'https://unique-id-final-year-project.herokuapp.com/login'
     const data = {
@@ -24,8 +35,6 @@ function login() {
         body:  JSON.stringify(data),
       
     }
-
-
     console.log(data)
     fetch(url, fetchData)
     .then(resp => {
@@ -36,6 +45,7 @@ function login() {
         }
     })
     .then(data => {
+        notProcessing()
         console.log(data)
         if (data.Error === 0) {
             user = ''
