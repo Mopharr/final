@@ -1,4 +1,4 @@
-var k = "";
+
     function Login() {
         var input = document.getElementsByName('array[]');
         var error = document.getElementById('error');
