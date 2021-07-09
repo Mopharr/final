@@ -50,7 +50,7 @@ button {
     color: #fff;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -20px);
+    transform: translate(-50%, 0px);
     outline: none;
     border: none;
 }
@@ -69,4 +69,7 @@ button {
     button{
         bottom: -10px;
     }
+}
+@media all and (max-width:325px) {
+
 }
