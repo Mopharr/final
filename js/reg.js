@@ -87,9 +87,7 @@ var k = "";
                 fstate = ''
                 foccupation = ''
 
-                localStorage.setItem('userToken', data.token)
-                self.location = '/'
-                console.log("succesful");
+                
             } else {
                 error.innerHTML = data.Message
             }
