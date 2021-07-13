@@ -22,6 +22,9 @@
         var fstate = document.querySelector('#fstate').value
         var foccupation = document.querySelector('#foccupation').value
         var token = localStorage.getItem('userToken')
+        var button = document.querySelector('.button')
+
+        button.value = 'processing...'
 
 
         const url = 'https://unique-id-final-year-project.herokuapp.com/user_reg'
@@ -96,3 +99,31 @@
             console.log(error)
         })
     }
+    
+    document.querySelector('.button').addEventListener('click',
+        function() {
+            document.querySelector('.bg-modal').style.display = 'flex'
+        }
+    )
+    document.querySelector('.sign').addEventListener('click',
+        function() {
+            document.querySelector('.bg-modal').style.display = 'none'
+        }
+    )
+
+
+    const comment = document.querySelector('.comment')
+    button.addEventListener('click',
+        function () {
+            setInterval(function() {
+                const i = 0
+                const text =  ''
+
+                while (comment[i]) {
+                    text += car[i]
+
+                    i++
+                }
+            }, 3000)
+        }
+    )
