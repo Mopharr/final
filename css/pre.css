@@ -19,7 +19,7 @@ body {
 }
 .navbar img {
   margin-left: 20px;
-  width: 100px;
+  width: 70px;
 }
 .navbar a {
   color: #e8e1ef;
@@ -30,7 +30,6 @@ body {
   font-size: 20px;
   position: absolute;
   right: 0%;
-  top: 5%;
 }
 
 

@@ -1,5 +1,13 @@
 // NAVBAR FOR THE ADMIN PANEL 
+const userToken = localStorage.getItem('userToken')
 
+if (userToken === null) {
+    self.location = '/'
+} 
+function signOut() {
+    localStorage.clear()
+    self.location = '/'
+}
 
 const menu = document.querySelector('#hamburger')
 

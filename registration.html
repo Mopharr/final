@@ -18,38 +18,45 @@
                     <div class="item">
                         <div class="input-box">
                             <label for="">Name Of Child(Surname First)</label><br>
-                            <input required id="childname" type="text" name="array[]" value="" /> 
+                            <input autocomplete="off" required required id="childname" type="text" name="array[]" value="" /> 
                         </div>
                         <div class="input-box">
                             <label for="">Date Of Birth</label><br>
-                            <input required id="dob" type="date" name="array[]" value="" /> 
+                            <input autocomplete="off" required id="dob" type="date" name="array[]" value="" /> 
                         </div>
                     </div>
                     <div class="item">
                         <div class="input-box">
                             <label for="">Sex:</label><br>
-                            <input id="sex" type="text" name="array[]">
+                            <!-- <input autocomplete="off" id="sex" type="text" name="array[]"> -->
+                            <select name="sex" id="sex"> Sex
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
                         </div>
                         <div class="input-box">
                             <label for="">Place Of Occurrence</label><br>
-                            <input id="poc" type="text" name="array[]" value="" /> 
+                            <select name="poc" id="poc"> 
+                                <option value="Hospital">Hospital</option>
+                                <option value="Home">Home</option>
+                            </select>
                         </div>
                     </div>
                     <div class="item">
                         <div class="input-box">
-                            <label for="">Village / Town</label>
+                            <label autocomplete="off" for="">Village / Town</label>
                             <br>
                             <input id="village" type="text" name="array[]" value="" /> 
                         </div>
                         <div class="input-box">
                             <label for="">Local Government Area</label><br>
-                            <input id="local" type="text" name="array[]" value="" /> 
+                            <input autocomplete="off" id="local" type="text" name="array[]" value="" /> 
                         </div>
                     </div>
                     <div class="item">
                         <div class="input-box">
                             <label for="">State of Birth</label><br>
-                            <input id="sob" type="text" name="array[]" value="" /> 
+                            <input autocomplete="off" id="sob" type="text" name="array[]" value="" /> 
                         </div>
                     </div>
                 </div>
@@ -59,31 +66,31 @@
                     <div class="item">
                         <div class="input-box">
                             <label for="">Mother's Name</label><br>
-                            <input id="motherName" type="text" name="array[]" value="" /> 
+                            <input autocomplete="off" id="motherName" type="text" name="array[]" value="" /> 
                         </div>
                         <div class="input-box">
                             <label for="">Address</label><br>
-                            <input id="address" type="text" name="array[]" value="" /> 
+                            <input autocomplete="off" id="address" type="text" name="array[]" value="" /> 
                         </div>
                     </div>
                     <div class="item">
                         <div class="input-box">
                             <label for="">Marital Status</label><br>
-                            <input id="status" type="text" name="array[]" value="" /> 
+                            <input autocomplete="off" id="status" type="text" name="array[]" value="" /> 
                         </div>
                         <div class="input-box">
                             <label for="">Nationality</label><br>
-                            <input id="nationality" type="text" name="array[]" value="" /> 
+                            <input autocomplete="off" id="nationality" type="text" name="array[]" value="" /> 
                         </div>
                     </div>
                     <div class="item">
                         <div class="input-box">
                             <label for="">State</label><br>
-                            <input id="motherstate" type="text" name="array[]" value="" /> 
+                            <input autocomplete="off" id="motherstate" type="text" name="array[]" value="" /> 
                         </div>
                         <div class="input-box">
                             <label for="">Occupation</label><br>
-                            <input id="occupation" type="text" name="array[]" value="" /> 
+                            <input autocomplete="off" id="occupation" type="text" name="array[]" value="" /> 
                         </div>
                     </div> 
                 </div>
@@ -93,27 +100,27 @@
                     <div class="item">
                         <div class="input-box">
                             <label for="">Father's Name</label><br>
-                            <input id="fatherName" type="text" name="array[]" value="" /> 
+                            <input autocomplete="off" id="fatherName" type="text" name="array[]" value="" /> 
                         </div>
                         <div class="input-box">
                             <label for="">Address</label><br>
-                            <input id="fatherAddress" type="text" name="array[]" value="" /> 
+                            <input autocomplete="off" id="fatherAddress" type="text" name="array[]" value="" /> 
                         </div>
                     </div>
                     <div class="item">
                         <div class="input-box">
                             <label for="">Nationality</label><br>
-                            <input id="fnationality" type="text" name="array[]" value="" /> 
+                            <input autocomplete="off" id="fnationality" type="text" name="array[]" value="" /> 
                         </div>
                         <div class="input-box">
                             <label for="">State</label><br>
-                            <input id="fstate" type="text" name="array[]" value="" /> 
+                            <input autocomplete="off" id="fstate" type="text" name="array[]" value="" /> 
                         </div>
                     </div>
                     <div class="item">
                         <div class="input-box">
                             <label for="">Occupation</label><br>
-                            <input id="foccupation" type="text" name="array[]" value="" /> 
+                            <input autocomplete="off" required id="foccupation" type="text" name="array[]" value="" /> 
                         </div>
                     </div>
                 </div>
@@ -126,14 +133,11 @@
 
          <div class="bg-modal modal">
              <div class="modal-content">
-                 <div class="sign">
-                     +
-                 </div>
                  <div class="comment">
-                    <h3>Collecting data .......</h3>
-                    <h3>validating data .......</h3>
-                    <h3>Registration complete </h3>
-                    <h3>Registration Successful!</h3> 
+                     <div class="processing">
+                         <img src="./css/images/Eclipse-1s-200px.gif" alt="">
+                     </div>
+                    <h3 id="message"></h3>
                  </div>
                  <div class="check">
                     <img src="./css/images/check-removebg-preview.png" alt="">

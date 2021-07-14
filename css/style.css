@@ -20,9 +20,9 @@
   color: #fff;
   padding: 10px;
 }
-.navbar label {
+.navbar img {
+  width: 70px;
   margin-left: 20px;
-  font-size: 25px;
 }
 .navbar a {
   color: #e8e1ef;
@@ -126,18 +126,18 @@
 }
 .info input {
   outline: none;
-  text-align: center;
   border: 2px solid #285943;
   border-radius: 3px;
   margin: 10px auto 2rem;
 }
 .info a {
   background-color: #285943;
-  color: #fff;
+  color: #fff!important;
   text-decoration: none;
   transition: all 0.4s ease;
   padding: 10px 15px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .info a:hover {

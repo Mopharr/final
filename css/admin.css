@@ -25,9 +25,9 @@
     z-index: 10;
     width: 100vw;
   }
-  .navbar label {
+  .navbar img {
+    width: 70px;
     margin-left: 20px;
-    font-size: 25px;
   }
   body{
       height: 100vh;
@@ -132,6 +132,7 @@
     text-decoration: none;
     color: #fff;
     font-size: 25px;
+    background: transparent;
   }
   
   
@@ -166,7 +167,7 @@
 
     .dashboard.active{
       background-color: #66a771;
-      width: 200px;
+      width: 300px;
       opacity: 1;
       transition: all 0.5s ease;
       height: 100vh;

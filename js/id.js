@@ -1,27 +1,10 @@
 function submit() {
-    var input = document.querySelector('#id')
-    var token = localStorage.getItem('userToken')
+    var uniqueId = document.querySelector('#id').value
 
 
+    const url = `https://unique-id-final-year-project.herokuapp.com/fetch_a_citizen/${uniqueId}`
 
-    const url = 'https://unique-id-final-year-project.herokuapp.com/fetch_a_citizen'
-
-    const data = {
-        uniqueUserId: input
-    }
-
-    const fetchData = {
-        method: 'post',
-        headers: {'Content-Type': 'application/json',
-        Authorization: `Bearer ${token}`
-    },
-
-        body: JSON.stringify(data)
-
-    }
-
-    console.log(data)
-    fetch(url,fetchData)
+    fetch(url)
     .then(resp => {
         if(resp.ok){
             return resp.json() 
@@ -31,9 +14,11 @@ function submit() {
     })
 
     .then(data=> {
-        console.log(data)
+        localStorage.setItem('UserRecord', JSON.stringify(data.data))
+
         if (data.Error === 0){
-            input = ''
+            uniqueId = ''
+            
             self.location = "/preview.html"
         }else{
             error.innerHTML = data.Message
@@ -46,3 +31,4 @@ function submit() {
 
 
 }
+

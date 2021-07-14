@@ -89,41 +89,55 @@
                 fnationality = ''
                 fstate = ''
                 foccupation = ''
-
+                // show modal 
+                document.querySelector('.bg-modal').style.display = 'flex'
+                varification()
+                localStorage.setItem('UserRecord', JSON.stringify(data.data))
                 
             } else {
                 error.innerHTML = data.Message
+
             }
         })
         .catch(error => {
             console.log(error)
         })
     }
+
+
+
+    function varification() {
+        const message = document.querySelector('#message')
+        setTimeout(
+            () => {
+               message.innerHTML = 'Collecting data ......' 
+            }, 0
+        )
+        setTimeout(
+            () => {
+                message.innerHTML = 'Validating data.....'
+            }, 3000
+        )
+        setTimeout(
+            () => {
+                message.innerHTML = 'Registration complete.....'
+            }, 6000
+        )
+        setTimeout(
+            () => {
+                message.innerHTML = 'Registration successful.....', 
+                document.querySelector('.check').style.display = 'block'
+                document.querySelector('.processing').style.display = 'none'
+            }, 9000
+        )
+        setTimeout(
+            () => {
+                 document.querySelector('.bg-modal').style.display = 'none'
+                 self.location = '/preview.html'
+            }, 12000
+        )
+
+    }
+
     
-    document.querySelector('.button').addEventListener('click',
-        function() {
-            document.querySelector('.bg-modal').style.display = 'flex'
-        }
-    )
-    document.querySelector('.sign').addEventListener('click',
-        function() {
-            document.querySelector('.bg-modal').style.display = 'none'
-        }
-    )
-
-
-    const comment = document.querySelector('.comment')
-    button.addEventListener('click',
-        function () {
-            setInterval(function() {
-                const i = 0
-                const text =  ''
-
-                while (comment[i]) {
-                    text += car[i]
-
-                    i++
-                }
-            }, 3000)
-        }
-    )
+    
