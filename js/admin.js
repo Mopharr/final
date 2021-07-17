@@ -20,3 +20,25 @@ const mobileMenu = () => {
 }
 
 menu.addEventListener('click', mobileMenu)
+
+
+
+const adminName = document.querySelector('#adminName')
+const adminSex = document.querySelector('#adminSex')
+const adminDOB = document.querySelector('#adminDOB')
+const adminId = document.querySelector('#adminId')
+
+
+let userRecord = localStorage.getItem('UserRecord')
+
+if (userRecord === null) {
+    self.location = '/'
+}else{
+    userRecord = JSON.parse(userRecord)
+    console.log(userRecord)
+
+    adminName.innerHTML = userRecord.nameOfChild
+    adminSex.innerHTML = userRecord.sex
+    adminDOB.innerHTML = userRecord.dob
+    adminId.innerHTML = userRecord.uniqueUserId
+}

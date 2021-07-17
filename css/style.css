@@ -129,6 +129,8 @@
   border: 2px solid #285943;
   border-radius: 3px;
   margin: 10px auto 2rem;
+  padding: 10px 15px;
+  font-size: 20px;
 }
 .info a {
   background-color: #285943;
@@ -145,7 +147,7 @@
 }
 
 .footer-area {
-  background-color: #222;
+  background-color: #285943;
   color: #fff;
   padding: 50px 0 0;
 }
@@ -165,4 +167,29 @@
   display: inline-block;
   text-align: center;
   padding: 5px 0;
+}
+footer input{
+  font-size: 20px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    margin: 10px auto;
+}
+footer input::placeholder{
+  color: #fff;
+}
+.mail-chimp{
+  display: block;
+}
+button#fButton {
+  font-size: 20px;
+  padding: 5px 15px;
+  outline: none;
+  border: 2px solid #fff;
+  color: #000;
+  margin-left: 20px;
+}
+p.col-lg-8.col-sm-12.footer-text.m-0 {
+  text-align: center;
 }
