@@ -30,14 +30,17 @@
         </div>
     </header>
     <section class="info">
-        <!-- <form action="" method="post"> -->
+        <div class="section-content-holder">
             <div>
                 <h2>Enter Your ID: </h2> 
                 <div id="error"></div>
                 <input id="id" type="text" >
             </div>
-            <a onclick="submit()">Submit</a>
-        <!-- </form> -->
+            <a id="submitId" onclick="submit()">Submit</a>
+            <button id="processId" class="processing">
+                <img src="./css/images/unnamed.gif" alt="Loading">
+            </button>
+        </div>
     </section>
     <footer class="footer-area section_gap">
         <div class="footer-container">
@@ -45,9 +48,12 @@
                 <h3>Contact Us</h3>
                 <div id="success"></div>
                 <div id="contactError"></div>
-                <input type="email" id="email" required placeholder="Email address">
-                <textarea id="msg" rows="3" required placeholder="Your message here"></textarea>
-                <input onclick="submitMsg()" type="submit">
+                <input type="email" id="email" placeholder="Email address">
+                <textarea id="msg" rows="3" placeholder="Your message here"></textarea>
+                <input id="submitBtn" onclick="submitMsg()" type="submit">
+                <button id="process" class="processing">
+                    <img  src="./css/images/unnamed.gif" alt="Loading">
+                </button>
             </div>
         </div>
     </footer>

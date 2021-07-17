@@ -31,9 +31,7 @@ function login() {
     const fetchData = {
         method: 'post',
         headers: { 'Content-Type': 'application/json' },
-
         body:  JSON.stringify(data),
-      
     }
     fetch(url, fetchData)
     .then(resp => {
