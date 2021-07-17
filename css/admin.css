@@ -13,6 +13,9 @@
     --outline: #8cd790;
     --hover: #e8e1ef;
   }
+ body{
+   position: fixed;
+ }
   
   /* ======= Navbar ================ */
   .navbar {
@@ -42,12 +45,11 @@
   .main{
    display: flex;
    flex-direction: row;
-  
   }
   .top{display: flex;
     justify-content: flex-start;
     position: absolute;
-    top: 20.5%;
+    top: 14.5%;
     right: 3%;
     border: 1px solid #aaa;
     padding: 10px;
@@ -66,7 +68,7 @@
  hr{
    position: absolute;
    width: 100vw;
-   top: 27%;
+   top: 20%;
    border: 2px solid #aaa;
  }
   .buttom{
@@ -193,7 +195,7 @@
     
     .buttom{
       position: absolute;
-      top: 55%;
+      top: 50%;
       left: 20%;
       transform: translate(-20%, -50%);
     }
