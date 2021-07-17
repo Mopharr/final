@@ -30,12 +30,17 @@
         </div>
     </header>
     <section class="info">
-        <form action="" method="post">
+        <div class="section-content-holder">
             <div>
-                <h2>Enter Your ID: </h2> <input id="id" type="text" >
+                <h2>Enter Your ID: </h2> 
+                <div id="error"></div>
+                <input id="id" type="text" >
             </div>
-            <a onclick="submit()">Submit</a>
-        </form>
+            <a id="submitId" onclick="submit()">Submit</a>
+            <button id="processId" class="processing">
+                <img src="./css/images/unnamed.gif" alt="Loading">
+            </button>
+        </div>
     </section>
     <footer class="footer-area section_gap">
         <div class="container">
@@ -52,9 +57,20 @@
                 <p class="col-lg-8 col-sm-12 footer-text m-0">
                 Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved 
                 </p>
+        <div class="footer-container">
+            <div class="contact-form">
+                <h3>Contact Us</h3>
+                <div id="success"></div>
+                <div id="contactError"></div>
+                <input type="email" id="email" placeholder="Email address">
+                <textarea id="msg" rows="3" placeholder="Your message here"></textarea>
+                <input id="submitBtn" onclick="submitMsg()" type="submit">
+                <button id="process" class="processing">
+                    <img  src="./css/images/unnamed.gif" alt="Loading">
+                </button>
             </div>
         </div>
-        </footer>
+    </footer>
 
 
     <script src="./js/bootstrap.bundle.min.js"></script>

@@ -40,6 +40,4 @@ if (userRecord === null) {
     mStatus.innerHTML = userRecord.motherMaritalStatus
     mState.innerHTML = userRecord.motherStateOfOrigin
     mOccupation.innerHTML = userRecord.motherOccupation
-    
-
 }
