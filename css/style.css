@@ -24,7 +24,7 @@
   width: 70px;
   margin-left: 20px;
 }
-.navbar a {
+.navbar .login{
   color: #e8e1ef;
   margin-right: 20px;
   border: 2px solid #e8e1ef;

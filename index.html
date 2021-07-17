@@ -14,9 +14,9 @@
 
     <!-- ========== Navbar ===================== -->
     <nav class="navbar">
-        <img src="./css/images/WhatsApp_Image_2021-07-01_at_12.44.44_PM-removebg-preview.png" alt="">
+        <a href="/index.html"><img src="./css/images/WhatsApp_Image_2021-07-01_at_12.44.44_PM-removebg-preview.png" alt=""></a>
 
-        <a href="./login.html">Login</a>
+        <a href="./login.html" class="login">Login</a>
     </nav>
 
 
@@ -52,24 +52,25 @@
                     <button id="fButton">Submit</button>
                  </div>
              </div>
+             <div class="footer-container col-lg-6 col-md-6">
+                <div class="contact-form">
+                    <h3>Contact Us</h3>
+                    <div id="success"></div>
+                    <div id="contactError"></div>
+                    <input type="email" id="email" placeholder="Email address">
+                    <textarea id="msg" rows="3" placeholder="Your message here"></textarea>
+                    <input id="submitBtn" onclick="submitMsg()" type="submit">
+                    <button id="process" class="processing">
+                        <img  src="./css/images/unnamed.gif" alt="Loading">
+                    </button>
+                </div>
+            </div>
             </div>
             <div class="row footer-bottom d-flex justify-content-between">
                 <p class="col-lg-8 col-sm-12 footer-text m-0">
                 Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved 
                 </p>
-        <div class="footer-container">
-            <div class="contact-form">
-                <h3>Contact Us</h3>
-                <div id="success"></div>
-                <div id="contactError"></div>
-                <input type="email" id="email" placeholder="Email address">
-                <textarea id="msg" rows="3" placeholder="Your message here"></textarea>
-                <input id="submitBtn" onclick="submitMsg()" type="submit">
-                <button id="process" class="processing">
-                    <img  src="./css/images/unnamed.gif" alt="Loading">
-                </button>
-            </div>
-        </div>
+        
     </footer>
 
 
