@@ -13,9 +13,6 @@
     --outline: #8cd790;
     --hover: #e8e1ef;
   }
- body{
-   position: fixed;
- }
   
   /* ======= Navbar ================ */
   .navbar {
@@ -36,6 +33,7 @@
       height: 100vh;
       overflow-y: hidden;
       overflow-x: hidden;
+      position: static;
   } 
 
 
@@ -204,6 +202,7 @@
   @media (max-width:560px) {
     body{
       overflow-x: hidden;
+      position: static;
     }
     .top{
       width: 80%;
