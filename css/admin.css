@@ -33,7 +33,7 @@
       height: 100vh;
       overflow-y: hidden;
       overflow-x: hidden;
-      position: static;
+      position: static !important;
   } 
 
 
@@ -202,7 +202,7 @@
   @media (max-width:560px) {
     body{
       overflow-x: hidden;
-      position: static;
+      position: static !important;
     }
     .top{
       width: 80%;
