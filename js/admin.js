@@ -1,9 +1,24 @@
 // NAVBAR FOR THE ADMIN PANEL 
 const userToken = localStorage.getItem('userToken')
 const tableBody = document.querySelector('#tableBody')
-console.log(tableBody)
-const loadData = () => {
-    const url = `https://unique-id-final-year-project.herokuapp.com/fetch_all`
+const processing = document.querySelector('.processing')
+const searchBtn = document.querySelector('#searchBtn')
+const error = document.querySelector('.error')
+
+
+searchBtn.addEventListener('click', () => {
+    const searchText = document.querySelector('#searchText').value
+    loadData(searchText)
+})
+
+const loadData = (userId) => {
+    processing.style.display = 'flex'
+    let url
+    if(userId) {
+        url = `https://unique-id-final-year-project.herokuapp.com/fetch_a_citizen/${userId}`
+    } else {
+        url = `https://unique-id-final-year-project.herokuapp.com/fetch_all`
+    }
     fetch(url, {
         headers: {
             'Authorization': `Bearer ${userToken}`
@@ -17,28 +32,38 @@ const loadData = () => {
         }
     })
     .then(data=> {
+        processing.style.display = 'none'
         if (data.Error === 0){
-            localStorage.setItem('allRecords', JSON.stringify(data.data))
-            let sn = 0
-            for (record of data.data) {
-                sn++
-                const row = document.createElement('tr')
-                row.innerHTML = `
-                    <td> ${sn} </td>
+            if (Array.isArray(data.data)) {
+                let sn = 0
+                for (record of data.data) {
+                    sn++
+                    const row = document.createElement('tr')
+                    row.innerHTML = `
+                        <td> ${sn} </td>
+                        <td> ${record.nameOfChild} </td>
+                        <td> ${record.sex} </td>
+                        <td> ${record.dob} </td>
+                        <td> ${record.uniqueUserId} </td>
+                    `
+                    tableBody.append(row)
+                }
+            } else {
+                const record = data.data
+                const row = `
+                    <tr>
+                    <td> ${1} </td>
                     <td> ${record.nameOfChild} </td>
                     <td> ${record.sex} </td>
                     <td> ${record.dob} </td>
                     <td> ${record.uniqueUserId} </td>
+                    </tr>
                 `
-                tableBody.append(row)
-                // if (sn === 5) {
-                //     break
-                // }
+                tableBody.innerHTML = row
             }
         } else {
-            console.log(data.Message)
-            // error.innerHTML = data.Message
-            // setTimeout(_ => error.innerHTML = '', 3000)
+            error.innerHTML = data.Message
+            setTimeout(_ => error.innerHTML = '', 3000)
         }
     })
     .catch(error => {
