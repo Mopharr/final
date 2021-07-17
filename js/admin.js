@@ -57,6 +57,7 @@ const loadData = (userId) => {
                     <td> ${record.sex} </td>
                     <td> ${record.dob} </td>
                     <td> ${record.uniqueUserId} </td>
+                        
                     </tr>
                 `
                 tableBody.innerHTML = row
