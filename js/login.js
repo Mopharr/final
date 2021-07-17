@@ -35,7 +35,6 @@ function login() {
         body:  JSON.stringify(data),
       
     }
-    console.log(data)
     fetch(url, fetchData)
     .then(resp => {
         if(resp.ok) {
