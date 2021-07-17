@@ -28,6 +28,4 @@ if (userRecord === null) {
     fOccupation.innerHTML = userRecord.fatherOccupation
     mName.innerHTML = userRecord.motherName
     mOccupation.innerHTML = userRecord.motherOccupation
-    
-
 }

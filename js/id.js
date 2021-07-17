@@ -23,7 +23,7 @@ function notProcessing(location) {
 
 
 function submit() {
-    const uniqueId = document.querySelector('#id').value
+    let uniqueId = document.querySelector('#id').value
     const error = document.querySelector('#error')
     const url = `https://unique-id-final-year-project.herokuapp.com/fetch_a_citizen/${uniqueId}`
 
@@ -61,8 +61,8 @@ const submitMsg = () => {
     const success = document.querySelector('#success')
     if (email.value !== '' && message.vlaue !== '') {
         processing('feedback')
-        // const url = `https://unique-id-final-year-project.herokuapp.com/feedback`
-        const url = `http:localhost:3000/feedback`
+        const url = `https://unique-id-final-year-project.herokuapp.com/feedback`
+        // const url = `http:localhost:3000/feedback`
         const fetchData = {
             method: 'post',
             headers: {
