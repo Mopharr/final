@@ -44,15 +44,14 @@
    flex-direction: row;
   
   }
-  .top{
+  .top{display: flex;
+    justify-content: flex-start;
     position: absolute;
-    top: 15%;
-    right: 0%;
-    transform: translate(-50%,-13%);
+    top: 14.5%;
+    right: 3%;
     border: 1px solid #aaa;
     padding: 10px;
     border-radius: 8px;
-    width: 400px;
   }
   .top img{
     height: 20px;
@@ -78,6 +77,11 @@
     margin: 20px;
     overflow-y: scroll;
     height: 450px;
+  }
+  .error {
+    color: #fc7f7f;
+    width: 100%;
+    text-align: center;
   }
   .table{
     font-size: 0.9em;
@@ -207,4 +211,9 @@
     }
   }
 
-
+.processing {
+  display: none;
+  padding-top: 45px;
+  /* display: flex; */
+  justify-content: center;
+}

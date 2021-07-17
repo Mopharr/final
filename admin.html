@@ -25,11 +25,12 @@
         </section>
         <section class="main-top">
                 <div class="top">
-                    <img src="./css/images/icons8-search-100.png" alt="">
-                    <input type="text" placeholder="search">
+                    <input type="text" id="searchText" placeholder="search by Unique Id">
+                    <img id="searchBtn" src="./css/images/icons8-search-100.png" alt="Search">
                 </div>
                 <hr>
                 <div class="buttom">
+                    <p class="error"></p>
                     <table class="table">
                        <thead>
                            <tr>
@@ -42,8 +43,12 @@
                            </tr>
                        </thead>
                        <tbody id="tableBody">
-                        </tbody>  
+
+                        </tbody>
                     </table>
+                    <div class="processing">
+                        <img src="./css/images/Eclipse-1s-200px.gif" alt="">
+                    </div>
                 </div>
                 <hr>
         </section>
