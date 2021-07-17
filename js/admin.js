@@ -71,6 +71,8 @@ const loadData = (userId) => {
         console.log(error)
     })
 }
+    const userToken = localStorage.getItem('userToken')
+
 
 if (userToken === null) {
     self.location = '/'
