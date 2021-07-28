@@ -9,21 +9,19 @@
     <title>Document</title>
 </head>
 <body>
-
-<nav class="navbar">
-    <a href="/index.html"><img src="./css/images/WhatsApp_Image_2021-07-01_at_12.44.44_PM-removebg-preview.png" alt=""></a>
-
-        <a href="./admin.html" class="login">admin</a>
+    <nav class="navbar">
+        <a href="/index.html"><img src="./css/images/WhatsApp_Image_2021-07-01_at_12.44.44_PM-removebg-preview.png" alt=""></a>
+        <button onclick="goBack()" class="back-to-dashboard">Admin</button>
     </nav>
     <header>
         <div class="box-top">
             <i class="far fa-user"></i><span>Profile</span>
         </div>
-        
-     <div class="box">
+    </header>
+    <div class="box">
         <div class="child">
             <div class="box-main">
-               <h3>Name:</h3><span id="cname"></span>
+            <h3>Name:</h3><span id="cname"></span>
             </div>
             <div class="box-main">
                 <h3>D.O.B:</h3><span id="DOB"></span>
@@ -42,9 +40,6 @@
             </div> 
             <div class="box-main">
                 <h3>Place of Occurrence: </h3><span id="POC" ></span>
-            </div>
-            <div class="box-main">
-                <h3>LocalGovt: </h3><span id="localGovt" ></span>
             </div>
         </div>
         <div class="parent">
@@ -76,10 +71,7 @@
                 <h3>Mother-Occupation:</h3><span id="mOccupation"></span>
             </div>
         </div>
-  </div>
-    </header>
-        
-
+    </div>
 <script src="./js/preview.js"></script>
 </body>
 </html>

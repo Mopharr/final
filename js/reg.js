@@ -93,7 +93,6 @@
                 document.querySelector('.bg-modal').style.display = 'flex'
                 varification()
                 localStorage.setItem('UserRecord', JSON.stringify(data.data))
-                
             } else {
                 error.innerHTML = data.Message
 

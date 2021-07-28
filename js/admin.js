@@ -5,7 +5,6 @@ const processing = document.querySelector('.processing')
 const searchBtn = document.querySelector('#searchBtn')
 const error = document.querySelector('.error')
 
-
 searchBtn.addEventListener('click', () => {
     const searchText = document.querySelector('#searchText').value
     loadData(searchText)
@@ -52,12 +51,11 @@ const loadData = (userId) => {
                 const record = data.data
                 const row = `
                     <tr>
-                    <td> ${1} </td>
-                    <td> ${record.nameOfChild} </td>
-                    <td> ${record.sex} </td>
-                    <td> ${record.dob} </td>
-                    <td> ${record.uniqueUserId} </td>
-                        
+                        <td> ${1} </td>
+                        <td> ${record.nameOfChild} </td>
+                        <td> ${record.sex} </td>
+                        <td> ${record.dob} </td>
+                        <td> ${record.uniqueUserId} </td>
                     </tr>
                 `
                 tableBody.innerHTML = row
@@ -71,8 +69,6 @@ const loadData = (userId) => {
         console.log(error)
     })
 }
-    const userToken = localStorage.getItem('userToken')
-
 
 if (userToken === null) {
     self.location = '/'
@@ -97,22 +93,21 @@ menu.addEventListener('click', mobileMenu)
 
 
 
-const adminName = document.querySelector('#adminName')
-const adminSex = document.querySelector('#adminSex')
-const adminDOB = document.querySelector('#adminDOB')
-const adminId = document.querySelector('#adminId')
+// const adminName = document.querySelector('#adminName')
+// const adminSex = document.querySelector('#adminSex')
+// const adminDOB = document.querySelector('#adminDOB')
+// const adminId = document.querySelector('#adminId')
 
 
-let userRecord = localStorage.getItem('UserRecord')
+// let userRecord = localStorage.getItem('UserRecord')
 
-if (userRecord === null) {
-    self.location = '/'
-}else{
-    userRecord = JSON.parse(userRecord)
-    console.log(userRecord)
-
-    adminName.innerHTML = userRecord.nameOfChild
-    adminSex.innerHTML = userRecord.sex
-    adminDOB.innerHTML = userRecord.dob
-    adminId.innerHTML = userRecord.uniqueUserId
-}
+// if (userRecord === null) {
+//     self.location = '/'
+// } else {
+//     userRecord = JSON.parse(userRecord)
+//     console.log(userRecord)
+//     adminName.innerHTML = userRecord.nameOfChild
+//     adminSex.innerHTML = userRecord.sex
+//     adminDOB.innerHTML = userRecord.dob
+//     adminId.innerHTML = userRecord.uniqueUserId
+// }

@@ -5,7 +5,7 @@
 }
 
 body {
-
+  padding-bottom: 50px;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -16,20 +16,23 @@ body {
   background-color: #285943;
   color: #fff;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 .navbar img {
   margin-left: 20px;
   width: 70px;
 }
-.navbar .login {
+.navbar .back-to-dashboard {
   color: #e8e1ef;
   margin-right: 20px;
   border: 2px solid #e8e1ef;
-  padding: 10px 15px;
+  padding: 0px 20px;
   text-decoration: none;
   font-size: 20px;
-  position: absolute;
-  right: 0%;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 
@@ -52,12 +55,8 @@ header{
   font-size: 30px;
 }
 .box {
-  margin:100px auto 50px;
-  position: absolute;
-  top: 66%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 70%;
+  margin: 0px auto;
   background-color: #f5f5f5;
   padding: 10px 20px;
   border-radius: 8px;
@@ -91,13 +90,13 @@ header{
 @media (max-width: 1025px) {
     .box{
         width: 90%;
-        margin-top: 129px;
+        /* margin-top: 129px; */
     }
     
 }
 @media (max-width: 600px) {
     .box{
-      margin-top: 348px;
+      /* margin-top: 348px; */
         display: flex;
         flex-direction:column ;
         height: auto;

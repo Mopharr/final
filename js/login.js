@@ -44,7 +44,6 @@ function login() {
         })
         .then(data => {
             notProcessing()
-            console.log(data)
             if (data.Error === 0) {
                 user = ''
                 pass = ''
